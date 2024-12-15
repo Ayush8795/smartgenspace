@@ -20,6 +20,7 @@ function App() {
       
       <main className="flex-grow">
         <Routes>
+        <Route path= {`${process.env.PUBLIC_URL}`} element={<Home />} />
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
