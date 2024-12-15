@@ -8,49 +8,49 @@ const Media = () => {
     {
       id: 1,
       type: 'image',
-      src: '/media/Rocket_Thrust.jpeg',
+      src: `${process.env.PUBLIC_URL}/media/Rocket_Thrust.jpeg`,
       title: 'Advanced Space Robotics',
       description: 'Cutting-edge satellite technology for space exploration'
     },
     {
       id: 2,
       type: 'image',
-      src: '/media/Rocket-Body.jpeg',
+      src: `${process.env.PUBLIC_URL}/media/Rocket-Body.jpeg`,
       title: 'Rocket Science',
       description: 'Exploring of Rocket Tech and manufacturing'
     },
     {
       id: 3,
       type: 'image',
-      src: '/media/Rocket-Parts.jpeg',
+      src: `${process.env.PUBLIC_URL}/media/Rocket-Parts.jpeg`,
       title: 'Satellite Engineering Workshop',
       description: 'Students learning satellite design principles'
     },
     {
         id: 4,
         type: 'image',
-        src: '/media/Rocket-Thrust-Engine-2.jpeg',
+        src: `${process.env.PUBLIC_URL}/media/Rocket-Thrust-Engine-2.jpeg`,
         title: 'Space Exploration',
         description: 'Advanced Space Exploration and Space Technology'
     },
     {
         id: 5,
         type: 'image',
-        src: '/media/Student-Engagement-1.jpeg',
+        src: `${process.env.PUBLIC_URL}/media/Student-Engagement-1.jpeg`,
         title: 'Student Engagement',
         description: 'Engaging students in spance science activities'
     },
     {
         id: 6,
         type: 'image',
-        src: '/media/Student-Engagement-2.jpeg',
+        src: `${process.env.PUBLIC_URL}/media/Student-Engagement-2.jpeg`,
         title: 'Student Engagement',
         description: 'Student\'s individual participation in Space Projects and Workshop'
     },
     {
         id: 7,
         type: 'image',
-        src: '/media/Student-Engagement-3.jpeg',
+        src: `${process.env.PUBLIC_URL}/media/Student-Engagement-3.jpeg`,
         title: 'Student Workshop',
         description: 'Students participation in workshop building simple yet innovative projects'
     },
