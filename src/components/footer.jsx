@@ -1,4 +1,4 @@
-// components/Footer.jsx
+import { Link } from 'react-router-dom';
 import React from 'react';
 import { 
   Facebook, 
@@ -21,17 +21,12 @@ function Footer() {
           </h3>
           <p className="text-blue-100 mb-4">
             Inspiring the next generation of space explorers, roboticists, 
-            and technological innovators through cutting-edge educational programs and hands on experience.
+            and technological innovators through cutting-edge educational programs and hands-on experience.
           </p>
-          
+
           {/* Social Media Links */}
           <div className="flex space-x-4 mt-6">
-            {[
-              { Icon: Facebook, link: '#' },
-              { Icon: Twitter, link: '#' },
-              { Icon: Instagram, link: '#' },
-              { Icon: Linkedin, link: '#' }
-            ].map(({ Icon, link }, index) => (
+            {[{ Icon: Facebook, link: '#' }, { Icon: Twitter, link: '#' }, { Icon: Instagram, link: '#' }, { Icon: Linkedin, link: '#' }].map(({ Icon, link }, index) => (
               <a 
                 key={index} 
                 href={link} 
@@ -59,13 +54,13 @@ function Footer() {
               { name: 'Contact', path: '/contact' },
               { name: 'Login', path: '/login' }
             ].map((link, index) => (
-              <a 
+              <Link 
                 key={index} 
-                href={link.path} 
+                to={link.path} 
                 className="text-blue-100 hover:text-white transition"
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
           </div>
         </div>
@@ -114,12 +109,12 @@ function Footer() {
           All Rights Reserved.
         </p>
         <div className="mt-2 space-x-4">
-          <a href="/" className="text-blue-100 hover:text-white">
+          <Link to="/" className="text-blue-100 hover:text-white">
             Privacy Policy
-          </a>
-          <a href="/" className="text-blue-100 hover:text-white">
+          </Link>
+          <Link to="/" className="text-blue-100 hover:text-white">
             Terms of Service
-          </a>
+          </Link>
         </div>
       </div>
     </footer>
